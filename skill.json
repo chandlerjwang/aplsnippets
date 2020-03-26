@@ -4,7 +4,7 @@
       "custom": {
         "endpoint": {
           "uri": "aplsnippets",
-	  "sourceDir": "lambda/custom"
+          "sourceDir": "lambda/custom"
         },
         "interfaces": [
           {
@@ -72,11 +72,7 @@
           "name": "APL snippets",
           "summary": "Sample Short Description",
           "description": "Sample Full Description",
-          "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
-          ],
+          "examplePhrases": [ "Alexa open hello world", "hello", "help" ],
           "keywords": []
         }
       },
