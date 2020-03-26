@@ -1,5 +1,5 @@
 # Animation
-`AnimateItem` Runs a fixed-duration animation sequence on one or more properties of a single component.
+`AnimateItem` runs a fixed-duration animation sequence on one or more properties of a single component.
 
 ## Sample
 Components support animating `opacity` and `transform` properties. The `from` value does not need to be specified for opacity, but it does need to be specified for transforms.
