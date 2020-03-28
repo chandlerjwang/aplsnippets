@@ -1,17 +1,32 @@
 # APL Video
 A video player shows an embedded video or series of videos to play. The embedded video player does not have any controls. Instead, the video player provides the events and commands necessary to build the controls for controlling the video player.
 
-Skills that use the `Video` component must provide a way to pause the video content by voice and by the use of an on-screen button.
+Skills that use the `Video` component must provide a way to pause the video content by voice or by the use of an on-screen button.
 
 ## Sample
 
 ```JSON
-{
-  "type": "Video",
-  "source": URL,
-  "autoplay": true
-}
+  {
+    "type": "Video",
+    "source": [ "https://aplsnippets.s3.amazonaws.com/assets/videos/BBBShort.mp4" ],
+    "id": "videoPlayerId",
+    "autoplay": false,
+    "scale": "best-fill",
+    "width": "85vw",
+    "height": "100vh",
+    "onPause": [
+      {}
+    ],
+    "onPlay": [
+      {}
+    ],
+    "onEnd": [
+      {}
+    ]
+  }
 ```
+
+In the example above, the `Video` component has a few properties such as `onPause`, `onPlay` and `onEnd` that need to be configured.
 
 ## Tips/Notes
 

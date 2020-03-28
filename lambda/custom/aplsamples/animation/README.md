@@ -2,37 +2,24 @@
 `AnimateItem` runs a fixed-duration animation sequence on one or more properties of a single component.
 
 ## Sample
-Components support animating `opacity` and `transform` properties. The `from` value does not need to be specified for opacity, but it does need to be specified for transforms.
+`AnimateItem` supports animating `opacity` and `transform` properties.
 
 ```JSON
 {
   "type": "AnimateItem",
   "easing": "ease-in-out",
-  "duration": 600,
-  "componentId": "myFlyingComponent",
+  "duration": 2900,
+  "componentId": "animationId1",
   "value": [
     {
       "property": "opacity",
+      "from": 0,
       "to": 1
     },
     {
       "property": "transform",
-      "from": [
-        {
-          "translateX": 200
-        },
-        {
-          "rotate": 90
-        }
-      ],
-      "to": [
-        {
-          "translateX": 0
-        },
-        {
-          "rotate": 0
-        }
-      ]
+      "from": [ { "translateX": -1000 } ],
+      "to": [ { "translateX": 0 } ]
     }
   ]
 }
@@ -49,24 +36,6 @@ Components support animating `opacity` and `transform` properties. The `from` va
     1. Copy/paste content in `document.json` into the editor.
 
 1. The `onMount` command is triggered at document load time. Component `onMount` commands are always executed even if the component itself is invisible or otherwise not displayed on the screen.
-
-    The event generated has the form:
-
-    ```JSON
-    {
-      "event": {
-        "source": {
-          "type": "nameOfComponent",
-          "handler": "Mount",
-          "id": "id of the component",
-          "uid": "Runtime-generated unique ID of the component",
-          "value": null
-        }
-      }
-    }
-    ```
-
-    The event type property is set to the name of the component; for example, `Frame`, `Container`, `TouchWrapper`, etc.
 
 ## References
 Below are some useful resources to help you get started:

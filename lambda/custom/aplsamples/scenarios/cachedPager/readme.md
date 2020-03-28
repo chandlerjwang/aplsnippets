@@ -79,54 +79,6 @@ See [UserEvent request](https://developer.amazon.com/en-US/docs/alexa/alexa-pres
   };
   ```
 
-- A `Pager` component displays a series of components one at a time. Pagers are commonly used for displaying a time-ordered sequence of data items.
-
-    Below is an example of using `Pager` component to nest a series of `Text`, `Image`, and `Frame` components:
-
-    ```JSON
-      {
-        "type": "Pager",
-        "id": "pagerId",
-        "items": [
-          {
-            "type": "Text",
-            "text": "Text content shown on page #1"
-          },
-          {
-            "type": "Container",
-            "width": "100vw",
-            "height": "100vh",
-            "items": [
-              {
-                "type": "Image",
-                "source": "https://aplsnippets.s3.amazonaws.com/assets/images/dog01_1200.jpg",
-                "position": "absolute"
-              },
-              {
-                "type": "Text",
-                "text": "page #2",
-              }
-            ]
-          },
-          {
-            "type": "Frame",
-            "width": "100vw",
-            "height": "100vh",
-            "backgroundColor": "navy",
-            "borderColor": "yellow",
-            "borderWidth": 20,
-            "borderRadius": 100,
-            "borderBottomRightRadius": 250,
-            "item": {
-              "type": "Text",
-              "text": "Page #3: Padded text in a frame with differnet border radii",
-            }
-          }
-        ]
-      }
-    ```
-
-
 ## References
 Below are some useful resources to help you get started:
 

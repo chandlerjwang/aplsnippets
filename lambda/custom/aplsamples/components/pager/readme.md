@@ -2,7 +2,6 @@
 The `AutoPage` command automatically progresses through a series of pages displayed in a [Pager](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-pager.html) component. The `AutoPage` command finishes after the last page has been displayed for the requested time period.
 
 ## Sample
-The `AutoPage` command has the following properties in addition to the regular command properties.
 
 ```JSON
 {

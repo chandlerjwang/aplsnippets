@@ -6,11 +6,9 @@ The `Text` component displays text in either a single line or multiple lines.
 ```JSON
 {
   "type": "Text",
-  "width": "100%",
+  "text": "centered text",
   "textAlign": "center",
-  "style": "textStylePrimary2",
-  "text": "<b>Hello!</b> This is your <i>Alexa</i> assistant speaking!",
-  "maxLines": 2
+  "spacing": "@topPaddingBetweenElements",
 }
 ```
 

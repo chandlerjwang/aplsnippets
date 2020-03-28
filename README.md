@@ -20,7 +20,7 @@ Here is the hierarchy, so you can navigate through the code:
 - &lt;root&gt;/lambda/custom/aplsamples/
 Contains all the snippets.
 Each feature has their own subfolder with an APL document and a readme file.
-Most snippets are self-contained, you should be able to copy/paste the document contents to the APL editor. When the snippet requires a data source commands, the readme will call it out.
+Most snippets are self-contained, you should be able to copy/paste the document contents to the [APL authoring tool](https://developer.amazon.com/alexa/console/ask/displays). When the snippet requires a data source commands, the readme will call it out.
 
 - &lt;root&gt;/lambda/custom/skill
 Contains the files needed for the demo to load and display the snippets. It has the intent handlers for the voice interactions.
@@ -83,7 +83,12 @@ In a system with [ASK CLI](https://developer.amazon.com/en-US/docs/alexa/smapi/q
 
 1. Having a local environment for debugging is super helpful. Follow this [Alexa Blog](https://developer.amazon.com/blogs/alexa/post/77c8f0b9-e9ee-48a9-813f-86cf7bf86747/setup-your-local-environment-for-debugging-an-alexa-skill) to setup your local debug workflow.
 
+## References
+Below are some useful resources to help you get started:
 
+- [Key Features of Multimodal Skills](https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/response-api/multimodal)
+- [APL Documentation](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html)
+- [APL Authoring Tool](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-authoring-tool.html)
 
 ## Contributing to the sample (or the docs)
 If you want to contribute a new snippet, or you want to contribute to the (very incomplete) documentation, you are very welcome to do so. Please submit a pull request.

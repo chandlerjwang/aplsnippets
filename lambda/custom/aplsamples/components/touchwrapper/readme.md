@@ -29,11 +29,11 @@ A `TouchWrapper` wraps a single child component and responds to touch events. To
 }
 ```
 
-In this case, the `Image`, when pressed, triggers a `SendEvent` and `SetValue` command which updates the value of `Text` component with id `"operation"` to `image press`.
+In this case, the `TouchWrapper` wraps an `Image` component which when pressed, triggers a `SendEvent` and `SetValue` command which updates the value of `Text` component with id `"operation"` to `image press`.
 
 ## Tips/Notes
 
-To play around with the `Video` snippet, following the steps below:
+To play around with the `TouchWrapper` snippet, following the steps below:
 
   1. Open the [APL authoring tool](https://developer.amazon.com/alexa/console/ask/displays)
 

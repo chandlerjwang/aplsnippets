@@ -1,5 +1,5 @@
 # APL SpeakItem
-The `SpeakItem` command reads the contents of a single item on the screen. The item will scroll into view if it is not currently visible. The item should have a `speech` property, but it is not required. Any type of component can be the recipient of `SpeakItem`.
+The `SpeakItem` command reads the contents of a single item on the screen. The item will scroll into view if it is not currently visible. Any type of component can be the recipient of `SpeakItem`.
 
 ## Sample
 
@@ -29,7 +29,7 @@ The `SpeakItem` command reads the contents of a single item on the screen. The i
 }
 ```
 
-In this case, the image of a cat is displayed while the audio file will be played.
+In this case, the `SpeakItem` command is executed on the `Image` component with `id equals introImage`, which results the image of a cat is displayed while the audio file is being played.
 
 ## Tips/Notes
 

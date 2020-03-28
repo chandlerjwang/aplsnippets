@@ -1,23 +1,28 @@
 # APL Image
-An `Image` is a component that draws a bitmap image on the screen. Do not use animated .gif files in your skills. Although these images may appear animated in the simulator, their behavior on screen devices with Alexa may be different.
+An `Image` is a component that draws a bitmap image on the screen.
 
 ## Sample
 
 ```JSON
 {
   "type": "Image",
-  "source": "http://images.example.com/image/foo.png",
-  "scale": "fill",
-  "width": 300,
-  "height": 300
+  "source": "https://aplsnippets.s3.amazonaws.com/assets/images/cat01_1200.jpg",
+  "width": "100%",
+  "height": "100%",
+  "filters": [
+    {
+      "type": "Blur",
+      "radius": "10dp"
+    }
+  ]
 }
 ```
 
-In this case, the image will fill a 300x300 box on the screen.
+In this case, the `Image` has a [filter](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-data-types.html#filter) operation applied against itself.
 
 ## Tips/Notes
 
-1. To play around with the `Video` snippet, following the steps below:
+1. To play around with the `Image` snippet, following the steps below:
 
     1. Open the [APL authoring tool](https://developer.amazon.com/alexa/console/ask/displays)
 

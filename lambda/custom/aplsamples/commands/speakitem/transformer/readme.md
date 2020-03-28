@@ -5,7 +5,7 @@ Transformers convert data in a data source into alternative representations. You
 
 The `object` data source type adds properties required for [transformers](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-transformers.html). You use transformers to manipulate the data.
 
-The example below shows the `single` data source with data in both the `properties` object. The data source also has the `ssmlToSpeech` transformer and `ssmlToText` transformer. The transformer references data within the properties object.
+The example below shows the `single` data source with data in the `properties` object. The data source also has the `ssmlToSpeech` transformer and `ssmlToText` transformer. The transformer references data within the `properties` object.
 
 Data source file: `aplsamples/datasources/singleanimal.json`:
 ```JSON
@@ -38,7 +38,7 @@ Now in `document.json`, you can bind `speech` as `${payload.single.properties.na
 
 ## Tips/Notes
 
-To play around with the `SpeakList` snippet, following the steps below:
+To play around with the `Transformers` snippet, following the steps below:
 
   1. Open the [APL authoring tool](https://developer.amazon.com/alexa/console/ask/displays)
 
