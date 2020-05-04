@@ -336,6 +336,5 @@ ASALocalRun/
 package-lock.json
 lambda/.DS_Store
 .DS_Store
-.ask/config
 .ask/lambda
 .legacy
