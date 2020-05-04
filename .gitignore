@@ -333,6 +333,9 @@ ASALocalRun/
 *.jaime
 =======
 
-lambda/custom/package-lock.json
-lambda/custom/.DS_Store
+package-lock.json
+lambda/.DS_Store
+.DS_Store
 .ask/config
+.ask/lambda
+.legacy
